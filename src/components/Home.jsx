@@ -1,11 +1,10 @@
 import React, { useState, useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
-import { TextColor } from "../contexts/ThemeContext";
+import { ThemeContext, TextColor } from "../contexts/ThemeContext";
 
 function Home() {
-    const { isLightTheme, light, dark } = ThemeContext.Consumer._currentValue
+    const { isLightTheme, light, dark } = useContext(ThemeContext)
     const currentTheme = isLightTheme ? light : dark;
-    const color = TextColor.Consumer._currentValue
+    const color = useContext(TextColor)
 
     return (
         <div>
