@@ -7,7 +7,7 @@ import ThemeContextProvider from './contexts/ThemeContext'
 
 function App() {
   const [count, setCount] = useState(0)
-  const theme = useContext(ThemeContextProvider)
+  // const theme = useContext(ThemeContextProvider)
   return (
     <>
       <Home />
