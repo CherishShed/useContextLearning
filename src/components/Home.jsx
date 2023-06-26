@@ -4,7 +4,8 @@ import { ThemeContext, TextColor } from "../contexts/ThemeContext";
 function Home() {
     const { isLightTheme, light, dark } = useContext(ThemeContext)
     const currentTheme = isLightTheme ? light : dark;
-    const color = useContext(TextColor)
+    const { color, setColor } = useContext(TextColor)
+    setColor("blue");
 
     return (
         <div>

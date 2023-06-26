@@ -11,7 +11,7 @@ function ThemeContextProvider(props) {
     })
 
     return (
-        <ThemeContext.Provider value={{ ...theme }}>
+        <ThemeContext.Provider value={{ ...theme, setTheme }}>
             {props.children}
         </ThemeContext.Provider>
     )
@@ -21,7 +21,7 @@ export function TextColorContext(props) {
     const [color, setColor] = useState("red")
 
     return (
-        <TextColor.Provider value={color}>
+        <TextColor.Provider value={{ color, setColor }}>
             {props.children}
         </TextColor.Provider>
     )
