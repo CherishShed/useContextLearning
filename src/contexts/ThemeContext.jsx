@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext();
 function ThemeContextProvider(props) {
 
     const [theme, setTheme] = useState("Shedi")
