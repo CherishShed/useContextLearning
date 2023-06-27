@@ -8,13 +8,11 @@ import ThemeContextProvider, { TextColorContext } from './contexts/ThemeContext'
 function App() {
   const [count, setCount] = useState(0)
   return (
-    <>
-      <ThemeContextProvider>
-        <TextColorContext>
-          <Home />
-        </TextColorContext>
-      </ThemeContextProvider>
-    </>
+    <ThemeContextProvider>
+      <TextColorContext>
+        <Home />
+      </TextColorContext>
+    </ThemeContextProvider>
   )
 }
 
