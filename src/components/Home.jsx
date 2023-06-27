@@ -13,8 +13,8 @@ function Home() {
                 setColor("blue")
             }}>change to dar theme</button>
             <button onClick={(e) => {
-                dispatchTheme({ type: "DARK_THEME" })
-                setColor("blue")
+                dispatchTheme({ type: "LIGHT_THEME" })
+                setColor("red")
             }}>change to light theme</button>
 
         </div>
